@@ -52,7 +52,7 @@ export default {
         .then((response) => {
           const { token, expired } = response.data;
           document.cookie = `hexschoolToken=${token};expires=${new Date(expired)}`;
-          this.$router.push('./admin/products');
+          this.$router.push('./admin');
         }).catch(() => {
           // eslint-disable-next-line no-alert
           alert('帳號或密碼錯誤，請重新登入！');

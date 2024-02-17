@@ -47,6 +47,18 @@ const routes = [
       },
     ],
   },
+  // 404頁面
+  {
+    path: '/:pathMatch(.*)*',
+    component: () => import('../views/NotFind.vue'),
+  },
+  // 重新導向
+  {
+    path: '/admin/:pathMatch(.*)*',
+    redirect: {
+      name: 'Home',
+    },
+  },
 ];
 
 const router = createRouter({

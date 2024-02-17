@@ -29,7 +29,7 @@ export default {
   },
   mounted() {
     // 取得 Token（Token 僅需要設定一次）
-    const token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
+    const token = document.cookie.replace(/(?:(?:^|.*;\s*)hexschoolToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
     // token自動夾帶進去headers
     axios.defaults.headers.common.Authorization = token;
 
