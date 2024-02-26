@@ -1,0 +1,1 @@
+import{_ as t,c as n,o,F as c,a as e}from"./index-MkmY-w4H.js";const s={},a=e("h1",null,"404.",-1),r=e("p",null,"找不到此頁。",-1);function _(l,d){return o(),n(c,null,[a,r],64)}const i=t(s,[["render",_]]);export{i as default};
